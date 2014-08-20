@@ -18,6 +18,9 @@
     "url": "https://github.com/SFantasy/Furion/issues"
   },
   "devDependencies": {
-    "express": "~4.8.5"
+    "express": "~4.8.5",
+    "gulp": "~3.8.7",
+    "gulp-concat": "~2.3.4",
+    "gulp-shell": "~0.2.9"
   }
 }
