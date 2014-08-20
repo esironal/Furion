@@ -1,0 +1,23 @@
+{
+  "name": "Furion",
+  "version": "0.0.0",
+  "description": "Tiny notepad for everyone",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SFantasy/Furion.git"
+  },
+  "keywords": [
+    "note"
+  ],
+  "author": "Fantasy Shao <forever.fantasy27@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SFantasy/Furion/issues"
+  },
+  "devDependencies": {
+    "express": "~4.8.5"
+  }
+}

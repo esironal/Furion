@@ -1,0 +1,22 @@
+{
+  "name": "Furion",
+  "version": "0.0.0",
+  "authors": [
+    "Fantasy Shao <forever.fantasy27@gmail.com>"
+  ],
+  "description": "Tiny notepad for everyone",
+  "keywords": [
+    "note"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.1"
+  }
+}
