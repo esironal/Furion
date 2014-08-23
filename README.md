@@ -1,7 +1,7 @@
 Furion
 ---
 
-Tiny notepad for everyone
+Pure notepad for everyone
 
 ## Features
 

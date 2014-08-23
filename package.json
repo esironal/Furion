@@ -1,7 +1,7 @@
 {
   "name": "Furion",
   "version": "0.0.0",
-  "description": "Tiny notepad for everyone",
+  "description": "Pure notepad for everyone",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

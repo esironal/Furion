@@ -4,7 +4,7 @@
   "authors": [
     "Fantasy Shao <forever.fantasy27@gmail.com>"
   ],
-  "description": "Tiny notepad for everyone",
+  "description": "Pure notepad for everyone",
   "keywords": [
     "note"
   ],
@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "localforage": "~0.9.2"
   }
 }

@@ -7,5 +7,4 @@
  * @update: 23/8/14
  */
 
-var evernote = require('evernote');
-
+var savenote = require('./savenote');
