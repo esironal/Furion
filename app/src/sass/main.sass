@@ -1,0 +1,61 @@
+/**
+ * 
+ * main.sass
+ *
+ * Copyleft 2014 Fantasy <fantasyshao@icloud.com>
+ *
+ * @author fantasy
+ * @create 22/8/14
+ * @update 23/8/14
+ *
+ */
+
+@import normalize
+@import mixin
+
+$MAIN_WIDTH: 740px
+$EDITOR_WIDTH: 540px
+
+a
+  text-decoration: none
+  color: #777
+  &:hover
+    text-decoration: underline
+    color: #c0c0c0
+
+.furion-main
+  max-width: $MAIN_WIDTH
+  margin: 5vh auto
+  +display-flex()
+  flex-direction: row
+
+.furion-header, .furion-editor
+  min-height: 85vh
+
+.furion-header
+  margin-right: 20px
+  text-align: right
+  h1
+    color: #333
+    font-family: 'Avenir Next', Avenir, 'Helvetica Neue', sans-serif
+    margin-top: 0
+  h2
+    color: #666
+    font-size: 20px
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif
+  p
+    color: #777
+    font-size: 14px
+    font-family: Georgia, sans-serif
+    &.first-p
+      margin-top: 350px
+
+.furion-editor
+  position: relative
+  outline: 0
+  padding: 10px
+  min-width: $EDITOR_WIDTH
+  box-sizing: border-box
+  font-family: Monaco, monospace
+  border: 0
+  +box-shadow(0 1px 4px rgba(0, 0, 0, .27), 0 0 60px rgba(0, 0, 0, .006) inset)

@@ -3,7 +3,7 @@
  *
  * @author fantasy <fantasyshao@icloud.com>
  * @create 2014-08-21
- * @update 2014-08-22
+ * @update 2014-08-23
  */
 
 var gulp = require('gulp');
@@ -28,8 +28,9 @@ gulp.task('sass', function() {
 
 // concat bower dependencies
 gulp.task('dependence-js', function() {
-  return gulp.src(bowerFiles({debugging: true}))
+  return gulp.src(bowerFiles())
     .pipe(concat('dependencies.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('./app/dest/js'));
 });
 
@@ -42,8 +43,8 @@ gulp.task('js', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./app/src/js/*.js', 'js');
-  gulp.watch('./app/src/sass/*.sass', 'sass');
+  gulp.watch(paths.js, ['js']);
+  gulp.watch(paths.sass, ['sass']);
 });
 
 gulp.task('build', ['dependence-js', 'js', 'sass']);
