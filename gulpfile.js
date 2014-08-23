@@ -9,6 +9,7 @@
 var gulp = require('gulp');
 
 var sass       = require('gulp-ruby-sass'),
+    browserify = require('gulp-browserify'),
     concat     = require('gulp-concat'),
     uglify     = require('gulp-uglify'),
     bowerFiles = require('main-bower-files'),
@@ -16,7 +17,7 @@ var sass       = require('gulp-ruby-sass'),
 
 var paths = {
   'sass': './app/src/sass/main.sass',
-  'js': './app/src/js/*.js'
+  'js': './app/src/js/main.js'
 };
 
 // compile sass file
@@ -37,8 +38,11 @@ gulp.task('dependence-js', function() {
 // concat and uglify js files
 gulp.task('js', function() {
   gulp.src(paths.js)
+    .pipe(browserify({
+      insertGlobals: true
+    }))
     .pipe(uglify())
-    .pipe(concat('main.js'))
+    .pipe(concat('main.min.js'))
     .pipe(gulp.dest('./app/dest/js'));
 });
 

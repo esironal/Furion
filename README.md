@@ -3,6 +3,12 @@ Furion
 
 Tiny notepad for everyone
 
+## Features
+
+- [ ] Preview notes with markdown
+- [ ] Save note with localForage
+- [ ] Connect and save contents with Evernote
+
 ## Build
 
 ### Install dependencies
